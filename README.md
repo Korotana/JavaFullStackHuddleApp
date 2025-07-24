@@ -4,12 +4,7 @@ Is an android app that allows individuals to create and find groups participatin
 
 ## How to Run
 
-***Method One (Preferred Method): Download the app directly from the Google Play Store (Android phone only)***
-1. Go to the Google Play Store to download our app search for **Huddle-Event Manager** (you will need to be signed into your Google Account)
-2. Install the app
-3. Once the install is complete, launch the app and proceed to sign in either with your email or through Google
-
-***Method Two: Download Android Studio and use the emulator***
+***Method One: Download Android Studio and use the emulator***
 
 _Pre-requisites_
 - Have android studio installed on your computer [Download link](https://developer.android.com/studio)
@@ -31,7 +26,7 @@ _Run app on emulator_
 4. Use the android multitasking menu on the emulator to close the app
 5. Open the app from the emulator
 
-***Method Three: Install directly from APK***
+***Method Two: Install directly from APK***
 1. On your device, navigate to **Apps & Notifications.**
 2. Tap the three dots in the upper right corner and select **Special Access.**
 3. Tap install unknown apps, and select **My Files.**
