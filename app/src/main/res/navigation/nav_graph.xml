@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/landingPage">
+    <fragment
+        android:id="@+id/landingPage"
+        android:name="com.diamonddogs.huddle.LandingPage"
+        android:label="fragment_landing_page"
+        tools:layout="@layout/fragment_landing_page" >
+        <action
+            android:id="@+id/action_landingPage_to_group_Data"
+            app:destination="@id/group_Data" />
+        <action
+            android:id="@+id/action_landingPage_to_createGroupSelectLocation"
+            app:destination="@id/createGroupSelectLocation" />
+        <argument
+            android:name="latlng"
+            app:argType="com.google.android.gms.maps.model.LatLng"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/create_group2"
+        android:name="com.diamonddogs.huddle.createGroup"
+        android:label="fragment_create_group"
+        tools:layout="@layout/fragment_create_group" >
+        <action
+            android:id="@+id/action_create_group2_to_user_groups2"
+            app:destination="@id/user_groups2" />
+        <action
+            android:id="@+id/action_create_group2_to_createGroupSelectLocation"
+            app:destination="@id/createGroupSelectLocation" />
+        <argument
+            android:name="groupLocation"
+            app:argType="com.google.android.gms.maps.model.LatLng"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/user_groups2"
+        android:name="com.diamonddogs.huddle.userGroups"
+        android:label="fragment_user_groups"
+        tools:layout="@layout/fragment_user_groups" >
+        <action
+            android:id="@+id/action_user_groups2_to_create_group2"
+            app:destination="@id/create_group2" />
+        <action
+            android:id="@+id/action_user_groups2_to_updateGroup"
+            app:destination="@id/updateGroup" />
+        <action
+            android:id="@+id/action_user_groups2_to_group_Data"
+            app:destination="@id/group_Data" />
+    </fragment>
+    <action android:id="@+id/action_global_user_groups2"
+            app:destination="@id/user_groups2" />
+    <fragment
+        android:id="@+id/create_profile"
+        android:name="com.diamonddogs.huddle.createProfile"
+        android:label="fragment_create_profile"
+        tools:layout="@layout/fragment_create_profile" >
+        <action
+            android:id="@+id/action_create_profile_to_create_profile_interests"
+            app:destination="@id/create_profile_interests" />
+    </fragment>
+    <fragment
+        android:id="@+id/create_profile_interests"
+        android:name="com.diamonddogs.huddle.create_profile_interests"
+        android:label="fragment_create_profile_interests"
+        tools:layout="@layout/fragment_create_profile_interests" >
+        <action
+            android:id="@+id/action_create_profile_interests_to_landingPage"
+            app:destination="@id/landingPage" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_create_profile"
+        app:destination="@id/create_profile" />
+    <fragment
+        android:id="@+id/display_profile"
+        android:name="com.diamonddogs.huddle.display_profile"
+        android:label="fragment_display_profile"
+        tools:layout="@layout/fragment_display_profile" />
+    <action
+        android:id="@+id/action_global_display_profile"
+        app:destination="@id/display_profile" />
+    <fragment
+        android:id="@+id/createGroupSelectLocation"
+        android:name="com.diamonddogs.huddle.CreateGroupSelectLocation"
+        android:label="fragment_create_group_select_location"
+        tools:layout="@layout/fragment_create_group_select_location" >
+        <action
+            android:id="@+id/locationToGroup"
+            app:destination="@id/create_group2" />
+        <action
+            android:id="@+id/action_createGroupSelectLocation_to_landingPage"
+            app:destination="@id/landingPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateGroup"
+        android:name="com.diamonddogs.huddle.UpdateGroup"
+        android:label="fragment_update_group"
+        tools:layout="@layout/fragment_update_group" >
+        <action
+            android:id="@+id/action_updateGroup_to_user_groups2"
+            app:destination="@id/user_groups2" />
+    </fragment>
+    <fragment
+        android:id="@+id/group_Data"
+        android:name="com.diamonddogs.huddle.GroupData"
+        android:label="fragment_group__data"
+        tools:layout="@layout/fragment_group__data" >
+        <action
+            android:id="@+id/action_group_Data_to_groupMembers"
+            app:destination="@id/groupMembers" />
+        <action
+            android:id="@+id/action_group_Data_to_updateGroup"
+            app:destination="@id/updateGroup" />
+        <action
+            android:id="@+id/action_group_Data_to_landingPage"
+            app:destination="@id/landingPage" />
+        <action
+            android:id="@+id/action_group_Data_to_user_groups2"
+            app:destination="@id/user_groups2" />
+    </fragment>
+    <fragment
+        android:id="@+id/groupMembers"
+        android:name="com.diamonddogs.huddle.GroupMembers"
+        android:label="fragment_group_members"
+        tools:layout="@layout/fragment_group_members" />
+    <fragment
+        android:id="@+id/friendRequestsPage"
+        android:name="com.diamonddogs.huddle.FriendRequests"
+        android:label="fragment_friend_requests"
+        tools:layout="@layout/fragment_friend_requests" >
+        <action
+            android:id="@+id/action_friendRequestsPage_self"
+            app:destination="@id/friendRequestsPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/friends"
+        android:name="com.diamonddogs.huddle.Friends"
+        android:label="fragment_friends"
+        tools:layout="@layout/fragment_friends" >
+        <action
+            android:id="@+id/action_friends_self"
+            app:destination="@id/friends" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatUserGroups"
+        android:name="com.diamonddogs.huddle.ChatUserGroups"
+        android:label="fragment_chat_user_groups"
+        tools:layout="@layout/fragment_chat_user_groups" >
+        <action
+            android:id="@+id/action_chatUserGroups_to_chatActivity"
+            app:destination="@id/chatActivity" />
+    </fragment>
+    <action android:id="@+id/action_global_chatUserGroups" app:destination="@id/chatUserGroups" />
+    <activity
+        android:id="@+id/chatActivity"
+        android:name="com.diamonddogs.huddle.ChatActivity"
+        android:label="chat_activity"
+        tools:layout="@layout/chat_activity" >
+        <argument
+            android:name="groupId"
+            app:argType="android.os.Bundle" />
+    </activity><action android:id="@+id/action_global_friends" app:destination="@id/friends"/><action android:id="@+id/action_global_friendRequestsPage" app:destination="@id/friendRequestsPage"/><action android:id="@+id/action_global_landingPage" app:destination="@id/landingPage"/>
+</navigation>

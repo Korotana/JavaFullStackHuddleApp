@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LandingPage">
+
+    <group android:id="@+id/radiusGroup" >
+        <item android:id="@+id/radius50"
+            android:title="5 Km"
+            app:showAsAction="never" />
+        <item android:id="@+id/radius100"
+            android:title="15 Km"
+            app:showAsAction="never"/>
+        <item android:id="@+id/radius300"
+            android:title="100 Km"
+            app:showAsAction="never"/>
+    </group>
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always" />
+</menu>

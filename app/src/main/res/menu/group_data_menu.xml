@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".GroupData">
+        <item
+            android:id="@+id/group_data_menu_update"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="@string/common_google_play_services_update_button"
+            app:showAsAction="never|withText"
+            />
+        <item
+            android:id="@+id/group_data_menu_leave_group"
+            android:icon="@drawable/exit_to_app"
+            android:title="Leave"
+            app:showAsAction="never|withText" />
+</menu>

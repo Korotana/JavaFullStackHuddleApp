@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "183457808382",
+    "project_id": "huddle---event-manager",
+    "storage_bucket": "huddle---event-manager.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183457808382:android:dcce78f051336ce7ba0aaf",
+        "android_client_info": {
+          "package_name": "com.diamonddogs.huddle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "183457808382-0cume37b018dn4sp8pti88gpijapmdes.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.diamonddogs.huddle",
+            "certificate_hash": "4b9bbca2af2e4697b74c8466745ba255fcb005de"
+          }
+        },
+        {
+          "client_id": "183457808382-uf940euckle9qmiofee5m1keonnsk1dm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuDD4Yel0TKGMV6ig-oGdfeVU-N0TIwYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "183457808382-uf940euckle9qmiofee5m1keonnsk1dm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

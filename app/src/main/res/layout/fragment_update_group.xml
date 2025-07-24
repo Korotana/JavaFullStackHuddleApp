@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/update_group_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateGroup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/update_group_name"
+        android:layout_width="275dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="68dp"
+        android:gravity="center"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/update_group_activity_list"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="275dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="68dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_group_min_age" />
+
+    <EditText
+        android:id="@+id/update_group_size"
+        android:layout_width="275dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="68dp"
+        android:ems="10"
+        android:hint="Size of Group"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_group_name" />
+
+    <EditText
+        android:id="@+id/update_group_people_required"
+        android:layout_width="275dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="68dp"
+        android:ems="10"
+        android:hint="People Required"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_group_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/update_group_min_age"
+                android:layout_width="72dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="113dp"
+                android:layout_marginTop="19dp"
+                android:ems="10"
+                android:hint="Min Age"
+                android:inputType="number"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/update_group_people_required" />
+
+            <TextView
+                android:id="@+id/update_group_TV_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="39dp"
+                android:text="to"
+                android:translationY="-15dp"
+                app:layout_constraintStart_toEndOf="@+id/update_group_min_age"
+                app:layout_constraintTop_toBottomOf="@+id/update_group_people_required" />
+
+            <EditText
+                android:id="@+id/update_group_max_age"
+                android:layout_width="72dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="19dp"
+                android:ems="10"
+                android:hint="Max Age"
+                android:inputType="number"
+                app:layout_constraintStart_toEndOf="@+id/update_group_TV_to"
+                app:layout_constraintTop_toBottomOf="@+id/update_group_people_required" />
+        </LinearLayout>
+
+        <EditText
+        android:id="@+id/update_group_about"
+        android:layout_width="275dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="68dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="About Group"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_group_activity_list" />
+
+    <Button
+        android:id="@+id/update_group_profile"
+        android:layout_width="275dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="94dp"
+        android:backgroundTint="#4C4C50"
+        android:text="Update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_group_about"
+        app:layout_constraintVertical_bias="1.0" />
+
+    </LinearLayout>
+</ScrollView>
