@@ -1,3 +1,6 @@
+Video Demo - https://youtu.be/V47KDV3q2q0
+
+
 # Huddle - Event Manager
 
 Is an android app that allows individuals to create and find groups participating in a number of activities both in their community and abroad; and communicate with other group members. Through built in features such as maps, location services, and a fully functional group chat; Users will be able to search locations and communicate with group members without having to leave the app.
