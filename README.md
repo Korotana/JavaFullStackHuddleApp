@@ -1,5 +1,8 @@
 Video Demo - https://youtu.be/V47KDV3q2q0
 
+Please Dont mind the UI:
+<img width="461" height="920" alt="image" src="https://github.com/user-attachments/assets/388f4a73-923c-44c9-87c9-12519dc39c44" />
+
 
 # Huddle - Event Manager
 
